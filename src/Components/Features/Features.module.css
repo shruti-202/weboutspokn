@@ -1,0 +1,27 @@
+.featureWrap {
+  display: flex;
+  flex-flow: column;
+  align-items: "center";
+  padding: 40px 100px;
+}
+.headerWrap {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+}
+.heading {
+  font-size: var(--h2-font-size-desktop);
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.desc {
+  font-size: var(--desc-font-size-desktop);
+  color: var(--desc-font-color);
+  width: 40%;
+  text-align: center;
+}
+.featureContent {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+}
