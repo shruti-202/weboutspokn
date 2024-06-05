@@ -1,0 +1,58 @@
+.reviewWrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding: 40px 100px;
+}
+.sliderParent {
+  padding-bottom: 40px;
+}
+.sliderCard {
+  margin-bottom: 60px;
+  background-color: var(--primary-color);
+  border-radius: var(--card-border-radius);
+  padding: 40px 30px;
+  margin-left: 0px;
+}
+.sliderCard {
+  transition: opacity 0.3s ease;
+}
+
+.sliderCard.inactive {
+  opacity: 0.2;
+}
+
+.sliderCard.active {
+  opacity: 1;
+}
+.desc {
+  font-size: 18px;
+  font-weight: regular;
+  line-height: 30px;
+  color: white;
+}
+.imgWrapper {
+  border-radius: 50%;
+}
+.reviewProfile {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviewProfileContent {
+  display: flex;
+  flex-flow: column;
+}
+.reviewName {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.reviewRole {
+  color: white;
+  font-size: 16px;
+  font-weight: regular;
+  text-transform: uppercase;
+}

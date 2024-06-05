@@ -13,8 +13,8 @@
   --desc-font-color: #434343;
   --subheading-color: #4d3636;
   --secondary-subheading-color: #2e2e2e;
-  --card-border-radius: 16px;
-  --small-card-border-radius: 8px;
+  --card-border-radius: 30px;
+  --small-card-border-radius: 16px;
 }
 
 * {
@@ -22,10 +22,15 @@
   padding: 0;
   margin: 0;
 }
-
+h2 {
+  font-size: var(--h2-font-size-desktop);
+}
 html,
 body {
   font-family: "Nunito Sans", sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
+}
+a {
+  text-decoration: none;
 }
