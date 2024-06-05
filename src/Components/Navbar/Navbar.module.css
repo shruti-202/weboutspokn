@@ -1,0 +1,13 @@
+.navWrapper {
+    background-color: var(--secondary-color);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.imgWrapper {
+    position: relative;
+    width: 330px;
+    height: 66px;
+}

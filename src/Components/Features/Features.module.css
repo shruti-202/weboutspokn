@@ -1,0 +1,108 @@
+.featureWrap {
+  display: flex;
+  flex-flow: column;
+  align-items: "center";
+  gap: 70px;
+
+  padding: 40px 100px;
+}
+.gradientBack {
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  right: 100px;
+  top: -200px;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(24, 91, 169, 0.2) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+.headerWrap {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+}
+.heading {
+  font-size: var(--h2-font-size-desktop);
+  color: var(--primary-color);
+  font-weight: 800;
+}
+.desc {
+  font-size: var(--desc-font-size-desktop);
+  color: var(--desc-font-color);
+  width: 40%;
+  text-align: center;
+}
+.featureContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 24% 30% 24%;
+  justify-content: center;
+  gap: 25px;
+}
+.columnDiv {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+.imageWrapper {
+  position: relative;
+  width: 90%;
+  height: 600px;
+}
+.CardBox {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #000000;
+  border-radius: var(--card-border-radius);
+  padding: 40px 20px;
+}
+.boxImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 10px;
+  border-radius: var(--small-card-border-radius);
+  background-color: var(--secondary-color);
+}
+.boxHeading {
+  font-size: 16px;
+  color: var(--subheading-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.boxDesc {
+  font-weight: regular;
+  color: var(--subheading-color);
+}
+.singleDiv {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  border-radius: var(--card-border-radius);
+  padding: 40px 30px 0px 30px;
+}
+.singleDesc {
+  width: 100%;
+  font-weight: semi-bold;
+  font-size: 25px;
+  color: white;
+}
+.singleImgContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -1100px;
+}
