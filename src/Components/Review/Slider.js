@@ -65,9 +65,7 @@ const Slider = () => {
             key={i}
             loop={true}
             centeredSlides={true}
-            className={`${styles.sliderCard} ${
-              i === activeSlideIndex ? styles.active : styles.inactive
-            }`}
+            className={styles.sliderCard}
           >
             <p className={styles.desc}>{data.desc}</p>
             <div className={styles.reviewProfile}>

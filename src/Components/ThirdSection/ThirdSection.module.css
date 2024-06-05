@@ -1,37 +1,38 @@
 .bg {
-    background-color: var(--primary-color);
-    padding: 100px;
-    display: grid;
-    grid-template-columns: 50% 49%;
-    align-items: center;
-    margin-top: 100px;
+  background-color: var(--primary-color);
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 50% 49%;
+  align-items: center;
+  margin-top: 180px;
+  margin-bottom: 50px;
 }
 .Left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: aliceblue; */
 }
 .heading {
-    font-size: 45px;
-    font-weight: 800;
-    color: white;
+  font-size: 45px;
+  font-weight: 800;
+  color: white;
 }
 .Content {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 .googlePlayStore {
-    position: relative;
-    width: 156px;
-    height: 46px;
+  position: relative;
+  width: 156px;
+  height: 46px;
 }
 .right {
-    position: relative;
+  position: relative;
 }
 .rightImg {
-    position: absolute;
-    top: -312px;
-    width: 600px;
-    height: 544.55px;
+  position: absolute;
+  top: -312px;
+  width: 409px;
+  height: 544px;
 }

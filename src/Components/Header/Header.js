@@ -21,13 +21,6 @@ const Header = () => {
               fill
             />
           </div>
-          <div className={styles.appStore}>
-            <Image
-              src="https://outspoknweb.s3.us-east-2.amazonaws.com/header/AppStore.png"
-              alt="Download from app store"
-              fill
-            />
-          </div>
         </div>
       </div>
       <div className={styles.headerRight}>
