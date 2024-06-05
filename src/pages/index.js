@@ -5,14 +5,16 @@ import Header from "@/Components/Header/Header";
 import ThirdSection from "@/Components/ThirdSection/ThirdSection";
 import Review from "@/Components/Review/Review";
 import Footer from "@/Components/Footer/Footer";
+import Values from "@/Components/Values/Values";
 
 export default function Home() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Header />
       <Features />
       <ThirdSection />
+      <Values />
       <Review />
       <Footer />
     </div>
