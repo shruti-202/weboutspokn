@@ -1,0 +1,50 @@
+.headerbg {
+    background-color: var(--background-color-light);
+    /* height: 500px; */
+    display: grid;
+    justify-content:right;
+    align-items: center;
+    grid-template-columns: 50% 49%;
+    /* gap: 2%; */
+    padding: 50px 100px ;
+}
+.headerHeading {
+    color: var(--primary-color);
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 70px;
+}
+.headerContent {
+    color: var(--desc-font-color);
+    font-size: 20px;
+}
+.headerContentImages {
+    display: flex;
+    gap: 20px;
+    
+}
+.googlePlayStore {
+    position: relative;
+    width: 156px;
+    height: 46px;
+}
+.appStore {
+    position: relative;
+    width: 156px;
+    height: 46px;
+}
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.headerRight {
+    display: flex;
+    justify-content: center;
+}
+.headerImg {
+    position: relative;
+    width: 316px;
+    height: 496px;
+    /* background-color: var(--primary-color); */
+}
