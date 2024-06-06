@@ -1,12 +1,12 @@
 .footer {
-  background-color: black;
+  background-color: var(--background-color-light);
   padding: 40px 100px;
   display: flex;
   flex-flow: column;
   gap: 10px;
 }
 .footer p {
-  color: white;
+  color: black;
 }
 .firstFooter {
   display: grid;
@@ -26,14 +26,32 @@
   gap: 10px;
 }
 .iconWrapper h5 {
-  color: white;
+  color: black;
   margin: 0;
   font-size: 16px;
   margin-bottom: 20px;
 }
 .FIcon {
-  color: white;
+  color: black;
+  font-size: 26px;
+}
+.googlePlayStore {
+  position: relative;
+  width: 156px;
+  height: 46px;
+}
+.followRow {
+  margin-top: 20px;
+}
+.followRow h5 {
   font-size: 20px;
+  margin-bottom: 5px !important;
+}
+.FApp {
+  margin-top: 40px;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
 }
 .iconWrapper p {
   display: flex;
@@ -56,7 +74,7 @@
   margin: 0;
   font-size: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 .FApp p {
   display: flex;
@@ -64,51 +82,14 @@
   cursor: pointer;
   border-radius: 4px;
   align-items: center;
-  border: 1px solid white;
   width: max-content;
-  padding: 10px 20px;
 }
 .fPages p:hover {
-  color: white;
-}
-.officeWrapper {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  gap: 10px;
-}
-.officeWrapper div p {
-  height: 100px;
-}
-.secondFooter h5,
-.thirdFooter h5 {
-  margin: 0;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 
-.secondFooter {
-  margin-bottom: 20px;
-}
-.linksWrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.linksWrap span {
-  color: white;
-  font-size: 16px;
-  width: max-content;
-  margin-right: 20px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.FApp span {
-  color: white;
-}
 .linksWrap span:hover {
-  color: white;
+  color: black;
 }
 .terms {
   display: flex;
@@ -118,7 +99,7 @@
   margin-top: 20px;
 }
 .terms span {
-  color: white;
+  color: black;
   display: flex;
   margin-bottom: 10px;
   align-items: center;
@@ -127,25 +108,6 @@
 }
 .terms h5 {
   margin-top: 0 !important;
-}
-
-.thirdFooter p {
-  text-align: center;
-}
-.thirdFooter span {
-  color: white;
-  cursor: pointer;
-}
-.thirdFooter h5 {
-  margin-top: 20px !important;
-}
-.thirdFooter .top {
-  display: flex;
-  gap: 0.345rem;
-  flex-wrap: wrap;
-}
-.thirdFooter hr {
-  margin-top: 20px;
 }
 .rights {
   text-align: center;
@@ -169,15 +131,10 @@
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
   }
-  .officeWrapper {
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    gap: 10px;
-  }
 }
 @media (max-width: 641px) {
   .footer {
-    background-color: black;
+    background-color: var(--background-color-light);
     padding: 40px 10px;
   }
   .firstFooter {
@@ -188,11 +145,7 @@
   .fPages {
     padding-left: 30px;
   }
-  .officeWrapper {
-    display: grid;
-    grid-template-columns: 49% 49%;
-    gap: 10px;
-  }
+
   .terms {
     display: flex;
     flex-flow: column;
@@ -213,53 +166,12 @@
   .FApp h5 {
     font-size: 16px;
   }
-  .secondFooter {
-    display: flex;
-    flex-flow: column;
-    gap: 20px;
 
-    justify-content: center;
-  }
-  .officeWrapper {
-    gap: 10px;
-  }
-  .officeWrapper div {
-    display: flex;
-    flex-flow: column;
-  }
-
-  .secondFooter h5,
-  .thirdFooter h5 {
-    margin: 0;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    color: white;
-  }
-  .secondFooter h5 {
-    margin-bottom: 0 !important;
-  }
-  .FApp p {
-    width: 100%;
-    padding: 10px 5px;
-  }
   .FIcon {
-    font-size: 29px;
-  }
-  .officeWrapper {
-    display: flex;
-    flex-flow: column;
-  }
-  .officeWrapper div p {
-    height: max-content;
-  }
-  .FIcon {
-    background-color: white;
     border-radius: 50%;
     padding: 5px;
     margin-bottom: 5px;
-    color: #4f419a;
+    color: black;
   }
   .terms {
     flex-wrap: wrap;

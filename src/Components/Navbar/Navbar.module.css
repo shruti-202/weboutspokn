@@ -21,6 +21,15 @@
   height: 38px;
 }
 .scrolled {
-  backdrop-filter: blur(40px) saturate(180%);
-  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  background-color: white;
+}
+@media (max-width: 1281px) {
+  .navWrapper {
+    padding: 0px 80px;
+  }
+}
+@media (max-width: 481px) {
+  .navWrapper {
+    padding: 0px 20px;
+  }
 }

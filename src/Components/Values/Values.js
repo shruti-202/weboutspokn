@@ -1,31 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Values.module.css";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-const Values = () => {
+// Dynamically import lottie-react to ensure it only loads on the client side
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
+
+const Values = ({ title, desc, src, inverted, lottieUrl }) => {
+  const [animationData, setAnimationData] = useState(null);
+  useEffect(() => {
+    if (inverted) {
+      const fetchLottieData = async () => {
+        try {
+          const response = await fetch(lottieUrl);
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+          setAnimationData(data);
+        } catch (error) {
+          console.error("Error fetching Lottie animation data:", error);
+        }
+      };
+
+      fetchLottieData();
+    }
+  }, [lottieUrl, inverted]);
   return (
-    <div className={styles.valuesWrapper}>
-      <div className={styles.leftValue}>
-        <div className={styles.imgWrapper}>
-          <Image
-            src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/Feature1.png"
-            alt="feature-1"
-            fill
-          />
+    <div
+      className={inverted ? styles.valuesWrapperInverted : styles.valuesWrapper}
+    >
+      {inverted ? (
+        ""
+      ) : (
+        <div className={styles.leftValue}>
+          <div className={styles.imgWrapper}>
+            <Image src={src} alt="feature-1" fill />
+          </div>
         </div>
-      </div>
+      )}
+
       <div className={styles.rightValue}>
-        <h2 className={styles.valueHeading}>
-          Earn daily rewards on your idle tokens
-        </h2>
-        <p className={styles.valueDesc}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla
-          suspendisse tortor aene. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Feugiat nulla suspendisse tortor aene. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse
-          tortor aene.
-        </p>
+        <h2 className={styles.valueHeading}>{title}</h2>
+        <p className={styles.valueDesc}>{desc}</p>
       </div>
+      {inverted && (
+        <div className={styles.leftValueInverted}>
+          <div className={styles.imgWrapperInverted}>
+            <Image src={src} alt="feature-1" fill />
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              style={{
+                width: "220px",
+                position: "absolute",
+                bottom: "-75px",
+                left: "-10px",
+              }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

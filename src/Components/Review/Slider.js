@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Review.module.css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Pagination } from "swiper/modules";
 // Import Swiper styles
+import "swiper/css/pagination";
 import "swiper/css";
 
 const Slider = () => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const reviewArray = [
     {
       id: 1,
@@ -55,9 +57,17 @@ const Slider = () => {
     <Swiper
       slidesPerView={2.5}
       spaceBetween={30}
+      pagination={true}
+      modules={[Pagination]}
       style={{ "--swiper-theme-color": "#185ba9" }}
       className="mySwiper"
-      onSlideChange={(swiper) => setActiveSlideIndex(swiper.activeIndex)}
+      breakpoints={{
+        1281: { slidesPerView: 3, spaceBetween: 40 },
+        801: { slidesPerView: 2.5, spaceBetween: 30 },
+        641: { slidesPerView: 1.6, spaceBetween: 10 },
+        481: { slidesPerView: 1, spaceBetween: 10 },
+        200: { slidesPerView: 1, spaceBetween: 10 },
+      }}
     >
       {reviewArray.map((data, i) => {
         return (

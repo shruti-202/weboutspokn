@@ -35,10 +35,16 @@
 .headerRight {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .headerImg {
   position: relative;
-  width: 316px;
+  width: 332px;
   height: 496px;
   /* background-color: var(--primary-color); */
+}
+@media (max-width: 1281px) {
+  .headerbg {
+    padding: 50px 80px;
+  }
 }
