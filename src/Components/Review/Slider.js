@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import styles from "./Review.module.css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { Pagination } from "swiper/modules";
 // Import Swiper styles
+import "swiper/css/pagination";
 import "swiper/css";
 
 const Slider = () => {
@@ -54,6 +57,8 @@ const Slider = () => {
     <Swiper
       slidesPerView={2.5}
       spaceBetween={30}
+      pagination={true}
+      modules={[Pagination]}
       style={{ "--swiper-theme-color": "#185ba9" }}
       className="mySwiper"
       breakpoints={{

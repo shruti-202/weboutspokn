@@ -15,21 +15,20 @@ const ThirdSection = () => {
         </p>
         <div className={styles.googlePlayStore}>
           <Image
-            src="https://outspoknweb.s3.us-east-2.amazonaws.com/header/GooglePlayStore.png"
+            src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/get-it-on-google-play-logo-white.png"
             alt="Download from play store"
             fill
           />
         </div>
       </div>
-      <div>
-        <div className={styles.right}>
-          <div className={styles.rightImg}>
-            <Image
-              src="https://outspoknweb.s3.us-east-2.amazonaws.com/review/DummyPhones.png"
-              alt="USPs"
-              fill
-            />
-          </div>
+
+      <div className={styles.right}>
+        <div className={styles.rightImg}>
+          <Image
+            src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/cta-phone.png"
+            alt="USPs"
+            fill
+          />
         </div>
       </div>
     </div>

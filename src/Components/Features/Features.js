@@ -16,7 +16,7 @@ const Features = () => {
         </p>
       </div>
       <div className={styles.featureContent}>
-        <div className={styles.gradientBack}></div>
+        {/* <div className={styles.gradientBack}></div> */}
         <div className={styles.columnDiv}>
           <CardBox
             height={30}

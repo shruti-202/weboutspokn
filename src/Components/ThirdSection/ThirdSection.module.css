@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 50% 49%;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-bottom: 50px;
 }
 .Left {
@@ -24,17 +24,19 @@
 }
 .googlePlayStore {
   position: relative;
-  width: 156px;
-  height: 46px;
+  width: 140px;
+  height: 48px;
 }
 .right {
+  height: 100%;
   position: relative;
 }
 .rightImg {
   position: absolute;
-  top: -312px;
-  width: 409px;
-  height: 544px;
+  right: 50px;
+  bottom: -100px;
+  width: 517px;
+  height: 450px;
 }
 @media (max-width: 1281px) {
   .bg {
