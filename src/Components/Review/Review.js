@@ -5,7 +5,7 @@ import Slider from "./Slider";
 const Review = () => {
   return (
     <div className={styles.reviewWrapper}>
-      <h2>What our users say?</h2>
+      <h2 className={styles.reviewHeading}>What our users say?</h2>
       <div className={styles.reviewSlider}>
         <Slider />
       </div>

@@ -32,3 +32,24 @@
   line-height: 30px;
   color: var(--secondary-subheading-color);
 }
+@media (max-width: 1281px) {
+  .valuesWrapper {
+    padding: 80px;
+    grid-template-columns: 54% 39%;
+    gap: 30px;
+  }
+}
+@media (max-width: 481px) {
+  .valuesWrapper {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .imgWrapper {
+    height: 391px;
+  }
+  .rightValue {
+    padding: 0 10px;
+  }
+}

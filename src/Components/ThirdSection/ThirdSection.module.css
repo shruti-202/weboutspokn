@@ -36,3 +36,19 @@
   width: 409px;
   height: 544px;
 }
+@media (max-width: 1281px) {
+  .bg {
+    padding: 70px;
+    margin-top: 80px;
+  }
+  .heading {
+    font-size: 37px;
+  }
+  .rightImg {
+    position: absolute;
+    top: -253.1px;
+    left: 100px;
+    width: 350px;
+    height: 444px;
+  }
+}

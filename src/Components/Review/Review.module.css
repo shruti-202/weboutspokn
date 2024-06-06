@@ -14,7 +14,9 @@
   padding: 40px 30px;
   margin-left: 0px;
 }
-
+.reviewHeading {
+  color: var(--primary-color);
+}
 .desc {
   font-size: 18px;
   font-weight: regular;
@@ -45,4 +47,14 @@
   font-size: 16px;
   font-weight: regular;
   text-transform: uppercase;
+}
+@media (max-width: 1281px) {
+  .reviewWrapper {
+    padding: 40px 80px;
+  }
+}
+@media (max-width: 481px) {
+  .reviewWrapper {
+    padding: 20px;
+  }
 }
