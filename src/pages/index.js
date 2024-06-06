@@ -10,7 +10,7 @@ import Values from "@/Components/Values/Values";
 export default function Home() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Header />
       <Features />
       <Values
@@ -32,8 +32,8 @@ export default function Home() {
 
       <Review />
       <ThirdSection />
-      <Footer /> */}
-      <Navbar />
+      <Footer />
+      {/* <Navbar />
       <Header lottieUrl="https://outspokn-fr.s3.us-east-2.amazonaws.com/chat/age-screen-cat.json" />
       <Values
         title="Earn daily rewards on your idle tokens"
@@ -55,7 +55,7 @@ export default function Home() {
       <ThirdSection />
       <Review />
       <Features />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
