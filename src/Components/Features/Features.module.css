@@ -121,12 +121,6 @@
   .boxHeading {
     text-align: center;
   }
-  .CardBox {
-    padding: 30px 10px;
-  }
-  .singleDiv {
-    padding: 40px 20px 0px 20px;
-  }
 }
 @media (max-width: 481px) {
   .featureWrap {

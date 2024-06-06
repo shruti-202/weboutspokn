@@ -58,13 +58,16 @@
     grid-template-columns: 54% 39%;
     gap: 30px;
   }
+  .imgWrapper {
+    height: 541px;
+  }
   .valuesWrapperInverted {
     padding: 40px 80px;
     grid-template-columns: 45% 51%;
     gap: 30px;
   }
   .imgWrapperInverted {
-    height: 420px;
+    height: 430px;
   }
   .lottieAnimation {
     width: 180px;
