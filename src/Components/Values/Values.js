@@ -50,16 +50,9 @@ const Values = ({ title, desc, src, inverted, lottieUrl }) => {
         <div className={styles.leftValueInverted}>
           <div className={styles.imgWrapperInverted}>
             <Image src={src} alt="feature-1" fill />
-            <Lottie
-              animationData={animationData}
-              loop={true}
-              style={{
-                width: "220px",
-                position: "absolute",
-                bottom: "-75px",
-                left: "-10px",
-              }}
-            />
+            <div className={styles.lottieAnimation}>
+              <Lottie animationData={animationData} loop={true} />
+            </div>
           </div>
         </div>
       )}

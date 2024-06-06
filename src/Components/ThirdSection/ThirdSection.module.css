@@ -54,3 +54,13 @@
     height: 444px;
   }
 }
+
+@media (max-width: 481px) {
+  .rightImg {
+    display: none;
+  }
+  .bg {
+    grid-template-columns: 100%;
+    padding: 20px;
+  }
+}
