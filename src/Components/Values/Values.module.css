@@ -46,24 +46,56 @@
   line-height: 30px;
   color: var(--secondary-subheading-color);
 }
+.lottieAnimation {
+  width: 220px;
+  position: absolute;
+  bottom: -75px;
+  left: -10px;
+}
 @media (max-width: 1281px) {
   .valuesWrapper {
     padding: 80px;
     grid-template-columns: 54% 39%;
     gap: 30px;
   }
+  .valuesWrapperInverted {
+    padding: 40px 80px;
+    grid-template-columns: 45% 51%;
+    gap: 30px;
+  }
+  .imgWrapperInverted {
+    height: 420px;
+  }
+  .lottieAnimation {
+    width: 180px;
+  }
 }
 @media (max-width: 481px) {
-  .valuesWrapper {
+  .valuesWrapper,
+  .valuesWrapperInverted {
     display: flex;
     flex-flow: column;
     gap: 30px;
     padding: 20px;
+  }
+  .valuesWrapperInverted {
+    flex-flow: column-reverse;
+    gap: 30px;
+  }
+  .lottieAnimation {
+    width: 130px;
+    bottom: -10px;
+  }
+  .imgWrapperInverted {
+    height: 320px;
   }
   .imgWrapper {
     height: 391px;
   }
   .rightValue {
     padding: 0 10px;
+  }
+  .valueHeading {
+    font-size: var(--h2-font-size-mobile);
   }
 }

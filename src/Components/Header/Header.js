@@ -53,16 +53,9 @@ const Header = ({ lottieUrl }) => {
             fill
           />
         </div>
-        <Lottie
-          animationData={animationData}
-          loop={true}
-          style={{
-            width: "130px",
-            position: "absolute",
-            bottom: "-60px",
-            left: "130px",
-          }}
-        />
+        <div className={styles.lottieAnimation}>
+          <Lottie animationData={animationData} loop={true} />
+        </div>
       </div>
     </div>
   );

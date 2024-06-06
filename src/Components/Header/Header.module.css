@@ -22,6 +22,12 @@
   display: flex;
   gap: 20px;
 }
+.lottieAnimation {
+  width: 130px;
+  position: absolute;
+  bottom: -60px;
+  left: 130px;
+}
 .googlePlayStore {
   position: relative;
   width: 156px;
@@ -46,5 +52,11 @@
 @media (max-width: 1281px) {
   .headerbg {
     padding: 50px 80px;
+  }
+  .lottieAnimation {
+    width: 130px;
+    position: absolute;
+    bottom: -60px;
+    left: 30px;
   }
 }

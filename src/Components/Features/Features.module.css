@@ -1,7 +1,7 @@
 .featureWrap {
   display: flex;
   flex-flow: column;
-  align-items: "center";
+  align-items: center;
   gap: 70px;
   margin-bottom: 100px;
   padding: 40px 100px;
@@ -32,9 +32,9 @@
   font-weight: 800;
 }
 .desc {
-  font-size: var(--desc-font-size-desktop);
+  font-size: 20px;
   color: var(--desc-font-color);
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
 .featureContent {
@@ -115,7 +115,17 @@
     padding: 40px 80px;
   }
   .featureContent {
-    grid-template-columns: 27% 37% 27%;
+    gap: 20px;
+    grid-template-columns: 28% 40% 28%;
+  }
+  .boxHeading {
+    text-align: center;
+  }
+  .CardBox {
+    padding: 30px 10px;
+  }
+  .singleDiv {
+    padding: 40px 20px 0px 20px;
   }
 }
 @media (max-width: 481px) {
@@ -143,5 +153,8 @@
   }
   .singleDiv {
     height: 560px;
+  }
+  .CardBox {
+    padding: 40px 20px;
   }
 }
