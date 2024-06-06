@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header lottieUrl="https://outspokn-fr.s3.us-east-2.amazonaws.com/chat/age-screen-cat.json" />
       <Features />
       <Values
         inverted={true}
