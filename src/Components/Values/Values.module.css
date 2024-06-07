@@ -77,12 +77,12 @@
   .valuesWrapper,
   .valuesWrapperInverted {
     display: flex;
-    flex-flow: column;
+    flex-flow: column-reverse;
     gap: 30px;
-    padding: 20px;
+    padding: 50px 20px;
   }
   .valuesWrapperInverted {
-    flex-flow: column-reverse;
+    flex-flow: column;
     gap: 30px;
   }
   .lottieAnimation {

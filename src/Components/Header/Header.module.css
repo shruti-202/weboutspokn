@@ -60,3 +60,37 @@
     left: 30px;
   }
 }
+@media(max-width: 481px) {
+  .headerbg{
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .lottieAnimation {
+    width: 130px;
+    position: absolute;
+    bottom: -90px;
+    left: -30px;
+  }
+  .headerHeading {
+    color: var(--primary-color);
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 50px;
+  }
+  .headerContent {
+    font-size: 18px;
+  }
+  .headerContentImages {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerImg {
+    width: 258px;
+    height: 404.5px;
+  }
+}
