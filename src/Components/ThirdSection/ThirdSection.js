@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ThirdSection.module.css";
 import Image from "next/image";
+import { MdOutlineMic } from "react-icons/md";
 
 const ThirdSection = () => {
   return (
@@ -23,6 +24,13 @@ const ThirdSection = () => {
       </div>
 
       <div className={styles.right}>
+        <div className={styles.waveAnimation}>
+          <div id="a">
+            <div className={styles.circleRipple}>
+              <MdOutlineMic className={styles.mic} />
+            </div>
+          </div>
+        </div>
         <div className={styles.rightImg}>
           <Image
             src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/cta-phone.png"

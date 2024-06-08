@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 50% 49%;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 .Left {
@@ -35,29 +35,132 @@
   position: absolute;
   right: 50px;
   bottom: -100px;
-  width: 517px;
-  height: 450px;
+  width: 400px;
+  height: 470px;
 }
+
+.waveAnimation {
+  position: absolute;
+  left: 34%;
+
+  border-radius: 50%;
+  top: 80px;
+}
+.mic {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.circleRipple {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: ripple 1.5s linear infinite;
+  animation: ripple 1.5s linear infinite;
+  left: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@-webkit-keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 137, 249, 0.3),
+      0 0 0 10px rgba(96, 137, 249, 0.3), 0 0 0 30px rgba(96, 137, 249, 0.3),
+      0 0 0 50px rgba(96, 137, 249, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(96, 137, 249, 0.3),
+      0 0 0 30px rgba(96, 137, 249, 0.3), 0 0 0 50px rgba(96, 137, 249, 0.3),
+      0 0 0 80px rgba(96, 137, 249, 0);
+  }
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 137, 249, 0.3),
+      0 0 0 10px rgba(96, 137, 249, 0.3), 0 0 0 30px rgba(96, 137, 249, 0.3),
+      0 0 0 50px rgba(96, 137, 249, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(96, 137, 249, 0.3),
+      0 0 0 30px rgba(96, 137, 249, 0.3), 0 0 0 50px rgba(96, 137, 249, 0.3),
+      0 0 0 60px rgba(96, 137, 249, 0);
+  }
+}
+
 @media (max-width: 1281px) {
   .bg {
     padding: 70px;
-    margin-top: 80px;
+    margin-top: 40px;
   }
+
   .heading {
     font-size: 37px;
   }
   .rightImg {
     position: absolute;
-    top: -253.1px;
-    left: 100px;
-    width: 350px;
-    height: 444px;
+    right: 50px;
+    bottom: -69px;
+    width: 310px;
+    height: 350px;
   }
 }
 
 @media (max-width: 481px) {
   .rightImg {
     display: none;
+  }
+  .heading {
+    text-align: center;
+    font-size: 37px;
+    line-height: 40px;
+  }
+  .waveAnimation {
+    display: none;
+  }
+  .Left {
+    align-items: center;
+  }
+  .Content {
+    text-align: center;
   }
   .bg {
     grid-template-columns: 100%;
