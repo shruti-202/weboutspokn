@@ -121,18 +121,14 @@
   .boxHeading {
     text-align: center;
   }
-  .CardBox {
-    padding: 30px 10px;
-  }
-  .singleDiv {
-    padding: 40px 20px 0px 20px;
-  }
 }
 @media (max-width: 481px) {
   .featureWrap {
-    padding: 20px;
+    padding: 50px 30px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+    gap: 30px;
   }
   .heading {
     text-align: center;
@@ -145,14 +141,11 @@
     display: flex;
     flex-flow: column;
   }
-  .gradientBack {
-    width: 100%;
-    top: -150px;
-    height: 50%;
-    right: 0;
-  }
   .singleDiv {
-    height: 560px;
+    height: 500px;
+  }
+  .imageWrapper {
+    height: 550px;
   }
   .CardBox {
     padding: 40px 20px;

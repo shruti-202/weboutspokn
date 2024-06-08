@@ -58,13 +58,16 @@
     grid-template-columns: 54% 39%;
     gap: 30px;
   }
+  .imgWrapper {
+    height: 541px;
+  }
   .valuesWrapperInverted {
     padding: 40px 80px;
     grid-template-columns: 45% 51%;
     gap: 30px;
   }
   .imgWrapperInverted {
-    height: 420px;
+    height: 430px;
   }
   .lottieAnimation {
     width: 180px;
@@ -74,17 +77,17 @@
   .valuesWrapper,
   .valuesWrapperInverted {
     display: flex;
-    flex-flow: column;
+    flex-flow: column-reverse;
     gap: 30px;
-    padding: 20px;
+    padding: 50px 20px;
   }
   .valuesWrapperInverted {
-    flex-flow: column-reverse;
+    flex-flow: column;
     gap: 30px;
   }
   .lottieAnimation {
-    width: 130px;
-    bottom: -10px;
+    width: 150px;
+    bottom: -77px;
   }
   .imgWrapperInverted {
     height: 320px;
