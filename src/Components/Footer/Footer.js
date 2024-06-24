@@ -107,10 +107,13 @@ const Footer = () => {
               fill
             />
           </div>
-          <Link href="mailto:info@outspokn.co" aria-label="mail your queries">
+          <Link
+            href="mailto:support@outspokn.co"
+            aria-label="mail your queries"
+          >
             <p>
               <MdMail className="FIcon" />
-              info@outspokn.co
+              support@outspokn.co
             </p>
           </Link>
         </div>
