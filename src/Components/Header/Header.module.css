@@ -60,8 +60,8 @@
     left: 30px;
   }
 }
-@media(max-width: 481px) {
-  .headerbg{
+@media (max-width: 481px) {
+  .headerbg {
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
@@ -91,6 +91,6 @@
   }
   .headerImg {
     width: 258px;
-    height: 404.5px;
+    height: 385.5px;
   }
 }

@@ -29,11 +29,11 @@ const Header = ({ lottieUrl }) => {
     <div className={styles.headerbg}>
       <div className={styles.headerLeft}>
         <h1 className={styles.headerHeading}>
-          Improve your language with no mistakes
+          Learn English faster using conversations
         </h1>
         <p className={styles.headerContent}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla
-          suspendisse tortor aenean dis placerat.
+          Quickly and easily become fluent in English through engaging
+          conversations!
         </p>
         <div className={styles.headerContentImages}>
           <div className={styles.googlePlayStore}>

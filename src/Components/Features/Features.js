@@ -8,11 +8,11 @@ const Features = () => {
     <div className={styles.featureWrap}>
       <div className={styles.headerWrap}>
         <h2 className={styles.heading}>
-          What problem we are tying to solve and for who
+          The quickest path to learning english with insightful feedback
         </h2>
         <p className={styles.desc}>
-          54% of working professionals believe knowing a second language is
-          important for their current job
+          Gain the ability to speak fluently and convincingly and effortlessly
+          engage any audience
         </p>
       </div>
       <div className={styles.featureContent}>
@@ -23,20 +23,19 @@ const Features = () => {
             width={30}
             src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/pratice-icon.png"
             title="Supervised Practice"
-            desc=" Our platform provides a structured learning environment with hands-on
-        practice and guidance powered by AI,"
+            desc="Accelerate your learning with our AI-powered platform, offering structured lessons, hands-on practice, and feedback-driven guidance."
           />
           <CardBox
             height={30}
             width={30}
             src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/educator-network.png"
             title="Trusted Educator Network"
-            desc="We carefully curate a network of  highly qualified and vetted  educators, ensuring learners have"
+            desc="Access top-tier, vetted educators tailored to your needs through our curated network, ensuring personalized guidance and support."
           />
         </div>
         <div className={styles.singleDiv}>
           <p className={styles.singleDesc}>
-            App that blends AI & human for accelerated language learning
+            Your on-the-go English coaching companion
           </p>
           <div className={styles.singleImgContainer}>
             <div className={styles.imageWrapper}>
@@ -54,14 +53,14 @@ const Features = () => {
             width={30}
             src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/ai-ineraction.png"
             title="Peer and AI Interaction"
-            desc="Learners can engage in  conversations  with AI and peers, in a safe and  supportive environment"
+            desc="Engage in conversations with AI and peers in a safe, supportive, judgment-free environment, and get ready for real-world interactions."
           />
           <CardBox
             height={29}
             width={34}
             src="https://outspoknweb.s3.us-east-2.amazonaws.com/Feature/supervised-icon.png"
-            title="Supervised Practice"
-            desc="Our platform provides a structured  learning environment with hands-on  practice and guidance powered by AI"
+            title="Fluent with Ease"
+            desc="Engage in daily practice to significantly improve your English skills and become fluent with confidence and ease!"
           />
         </div>
       </div>
