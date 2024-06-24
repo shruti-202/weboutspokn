@@ -8,11 +8,10 @@ const ThirdSection = () => {
     <div className={styles.bg}>
       <div className={styles.Left}>
         <h2 className={styles.heading}>
-          Are you ready to take your English to the next level?
+          Ready to take your English to new heights?
         </h2>
         <p className={styles.Content}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla
-          suspendisse tortor aenean dis placerat.
+          Accelerate your english learning by downloading the outspokn app now
         </p>
         <div className={styles.googlePlayStore}>
           <Image
