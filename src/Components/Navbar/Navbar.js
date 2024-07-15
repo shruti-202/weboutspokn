@@ -29,6 +29,7 @@ const Navbar = () => {
           src="https://outspokn-fr.s3.us-east-2.amazonaws.com/Outspokn-web/Outspokn-logo-new.png"
           alt="outspoknlogo"
           fill
+          priority
         />
       </div>
       <div className={styles.googlePlayStore}>
@@ -36,6 +37,7 @@ const Navbar = () => {
           src="https://outspoknweb.s3.us-east-2.amazonaws.com/header/GooglePlayStore.png"
           alt="Download from play store"
           fill
+          priority
         />
       </div>
     </div>
