@@ -19,12 +19,12 @@ const Footer = () => {
             aria-label="Go to the Home Page of skillslash"
           >
             <Image
-              src="https://outspokn-fr.s3.us-east-2.amazonaws.com/Outspokn-web/Outspokn-logo-new.png"
+              src="https://outspoknweb.s3.us-east-2.amazonaws.com/Outspokn-logo-new.png"
               alt="outspokn"
               quality={100}
               style={{ objectFit: "contain" }}
-              width={210}
-              height={60}
+              width={180}
+              height={41}
               loading="lazy"
             />
           </Link>
