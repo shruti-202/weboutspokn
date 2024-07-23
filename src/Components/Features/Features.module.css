@@ -6,6 +6,11 @@
   margin-bottom: 100px;
   padding: 40px 100px;
 }
+@media (min-width: 1650px) {
+  .featureWrap {
+    padding: 40px 300px;
+  }
+}
 /* .gradientBack {
   position: absolute;
   width: 600px;
@@ -30,6 +35,7 @@
   font-size: var(--h2-font-size-desktop);
   color: var(--primary-color);
   font-weight: 800;
+  text-align: center;
 }
 .desc {
   font-size: 20px;
