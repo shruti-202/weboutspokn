@@ -155,8 +155,9 @@
   }
   .heading {
     text-align: center;
-    font-size: 37px;
-    line-height: 40px;
+    font-size: var(--h2-font-size-mobile);
+    line-height: 35px;
+    width: 90%;
   }
   .waveAnimation {
     display: none;

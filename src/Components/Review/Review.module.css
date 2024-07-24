@@ -62,4 +62,8 @@
   .reviewWrapper {
     padding: 20px;
   }
+    .reviewHeading {
+      color: var(--primary-color);
+      text-align: center;
+    }
 }

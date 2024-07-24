@@ -91,6 +91,8 @@
     flex-flow: column-reverse;
     gap: 30px;
     padding: 50px 20px;
+    text-align: center;
+  
   }
   .valuesWrapperInverted {
     flex-flow: column;
@@ -108,8 +110,10 @@
   }
   .rightValue {
     padding: 0 10px;
+    align-items: center;
   }
   .valueHeading {
     font-size: var(--h2-font-size-mobile);
+        width: 99%;
   }
 }
